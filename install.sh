@@ -4,11 +4,21 @@ set -euo pipefail
 DOTFILES_DIR="$(pwd)"
 
 FILES=(
+  .bash_profile
+  .config/gh/config.yml
+  .config/gh/hosts.yml
+  .config/karabiner/karabiner.json
   .config/mpv/input.conf
+  .config/mpv/mpv.conf
   .editorconfig
   .gitconfig
   .gitignore
+  .inputrc
   .npmrc
+  .vimrc
+  "Library/Application Support/Code/User/keybindings.json"
+  "Library/Application Support/Code/User/settings.json"
+  "Library/Application Support/Code/User/tasks.json"
   bin
 )
 
