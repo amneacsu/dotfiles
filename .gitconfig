@@ -1,0 +1,36 @@
+[user]
+  name = Andrei Neacșu
+  email = 0x514@protonmail.com
+[color]
+  ui = always
+[color.diff]
+  old = brightmagenta
+  new = brightcyan
+[pull]
+  rebase = true
+[push]
+  default = simple
+[core]
+  autocrlf = false
+  ignorecase = true
+  excludesfile = ~/.gitignore
+[alias]
+  pf = push --force-with-lease
+  amm = commit --amend
+[advice]
+  statusHints = false
+  pushNonFastForward = false
+  commitBeforeMerge = false
+  detachedHead = false
+[diff]
+  renames = copy
+  mnemonicprefix = true
+[rerere]
+  enabled = true
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[init]
+  defaultBranch = master
