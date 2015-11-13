@@ -1,0 +1,23 @@
+[user]
+  name = Andrei Neacșu
+  email = amneacsu@gmail.com
+[color]
+  ui = auto
+[pull]
+  rebase = true
+[push]
+  default = upstream
+[core]
+  autocrlf = false
+  ignorecase = true
+  excludesfile = ~/.gitignore
+[alias]
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[advice]
+  statusHints = false
+  pushNonFastForward = false
+  commitBeforeMerge = false
+  detachedHead = false
+[diff]
+  renames = copy
+  mnemonicprefix = true
