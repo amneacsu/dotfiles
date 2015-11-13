@@ -1,0 +1,6 @@
+[Keyboard]
+RepeatDelay=200
+
+[Libinput][5426][152][Razer Razer DeathAdder Essential]
+PointerAcceleration=-0.800
+PointerAccelerationProfile=2

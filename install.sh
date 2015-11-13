@@ -4,11 +4,21 @@ set -euo pipefail
 DOTFILES_DIR="$(pwd)"
 
 FILES=(
+  .bashrc.d
   .config/mpv/input.conf
+  .config/mpv/mpv.conf
+  .config/kcminputrc
+  .config/kwinrc
+  .config/kglobalshortcutsrc
+  .config/doublecmd/doublecmd.xml
+  .config/plasmaparc
   .editorconfig
   .gitconfig
   .gitignore
   .npmrc
+  .var/app/com.visualstudio.code/config/Code/User/keybindings.json
+  .var/app/com.visualstudio.code/config/Code/User/settings.json
+  .var/app/com.visualstudio.code/config/Code/User/tasks.json
   bin
 )
 
