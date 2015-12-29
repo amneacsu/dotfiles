@@ -3,7 +3,6 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export LS_COLORS="$LS_COLORS:di=33:*.js=92"
-export HOMEBREW_GITHUB_API_TOKEN="9cb6c98a8abe80561d7cbb7e1175ad52d2092794"
 
 # Navigation
 alias ..="cd .."
