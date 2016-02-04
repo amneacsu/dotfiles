@@ -27,20 +27,29 @@ parse_git_branch() {
 }
 
 set_prompts() {
+    local black=$(tput setaf 0)
+    local blue=$(tput setaf 33)
+    local bold=$(tput bold)
+    local teal=$(tput setaf 37)
+    local cyan=$(tput setaf 123)
+    local green=$(tput setaf 64)
+    local lime=$(tput setaf 112)
+    local carrot=$(tput setaf 166)
+    local orange=$(tput setaf 136)
+    local purple=$(tput setaf 125)
+    local red=$(tput setaf 124)
+    local reset=$(tput sgr0)
+    local gray=$(tput setaf 8)
+    local white=$(tput setaf 2)
+    local yellow=$(tput setaf 184)
+
     tput sgr0 # reset colors
 
-    reset=$(tput sgr0)
-
-    cyan=$(tput setaf 123)
-    carrot=$(tput setaf 166)
-    lime=$(tput setaf 112)
-    orange=$(tput setaf 136)
-    yellow=$(tput setaf 184)
-
-    PS1="\n"
+    # set the terminal title to the current working directory
+    PS1="\n" # newline
     PS1+="\[$lime\]\W" # working directory
-    PS1+="\[$cyan\]\$(parse_git_branch)" # current git branch
-    PS1+="\[$yellow\] $ \[$reset\]" # plata
+    PS1+="\[$teal\]\$(parse_git_branch)"
+    PS1+="\[$yellow\] \$ \[$reset\]"
 
     export PS1
 }
