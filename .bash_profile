@@ -12,6 +12,8 @@ alias ..="cd .."
 alias ~="cd ~"
 alias l="gls -l -h --color --group-directories-first"
 alias la="gls -la -h --color --group-directories-first"
+alias s="cd ~/Scratch"
+alias a="atom ."
 
 # Go to Git repository root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
