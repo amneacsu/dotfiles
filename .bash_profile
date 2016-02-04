@@ -1,7 +1,10 @@
-export PATH=${HOME}/bin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin
+for file in ~/.{extra,bash_profile}; do
+    [ -r "$file" ] && source "$file"
+done
+unset file
+
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
 export LS_COLORS="$LS_COLORS:di=33:*.js=92"
 
 # Navigation
