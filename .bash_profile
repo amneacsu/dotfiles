@@ -13,8 +13,6 @@ alias ~="cd ~"
 alias l="gls -l -h --color --group-directories-first"
 alias la="gls -la -h --color --group-directories-first"
 
-alias ccat='pygmentize -g -O style=colorful,linenos=1'
-
 # Go to Git repository root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 alias gs="git status"
@@ -49,9 +47,6 @@ set_prompts() {
 
 set_prompts
 unset set_prompts
-
-# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
-[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
 # Add tab completion for Git commands and branches
 if [ -f ~/.git-completion.bash ]; then
