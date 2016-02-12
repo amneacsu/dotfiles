@@ -2,11 +2,11 @@
   name = Andrei Neacșu
   email = amneacsu@gmail.com
 [color]
-  ui = auto
+  ui = always
 [pull]
   rebase = true
 [push]
-  default = upstream
+  default = simple
 [core]
   autocrlf = false
   ignorecase = true
