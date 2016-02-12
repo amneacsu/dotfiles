@@ -1,4 +1,4 @@
-for file in ~/.{extra}; do
+for file in ~/.{extra,aliases}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
@@ -23,11 +23,6 @@ alias ga="git add -A"
 # Use GNU df
 alias df="gdf"
 
-# Get git branch
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ on \1/'
-}
-
 set_prompts() {
     local black=$(tput setaf 0)
     local blue=$(tput setaf 33)
@@ -48,9 +43,9 @@ set_prompts() {
     tput sgr0 # reset colors
 
     # set the terminal title to the current working directory
-    PS1="\n" # newline
-    PS1+="\[$lime\]\W" # working directory
-    PS1+="\[$teal\]\$(parse_git_branch)"
+    PS1="\n"
+    PS1+="\[$lime\]\W"
+    PS1+="\$(prompt_git \"\[$white\] on \[$teal\]\" \"\[$red\]\")"
     PS1+="\[$yellow\] \$ \[$reset\]"
 
     export PS1
@@ -63,5 +58,3 @@ unset set_prompts
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
-
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
