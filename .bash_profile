@@ -42,7 +42,6 @@ set_prompts() {
 
     tput sgr0 # reset colors
 
-    # set the terminal title to the current working directory
     PS1="\n"
     PS1+="\[$lime\]\W"
     PS1+="\$(prompt_git \"\[$white\] on \[$teal\]\" \"\[$red\]\")"
