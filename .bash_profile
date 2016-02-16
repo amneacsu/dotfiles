@@ -23,6 +23,22 @@ alias ga="git add -A"
 # Use GNU df
 alias df="gdf"
 
+function prompt_git() {
+    git rev-parse --is-inside-work-tree &>/dev/null || return
+
+    branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
+        git describe --all --exact-match HEAD 2> /dev/null || \
+        git rev-parse --short HEAD 2> /dev/null || \
+        echo '(unknown)')";
+        dirty=$(git diff --no-ext-diff --quiet --ignore-submodules --exit-code || echo -e "*")
+    fi
+
+    [ -n "${s}" ] && s=" [${s}]";
+    echo -e "${1}${branchName}${2}$dirty";
+
+    return
+}
+
 set_prompts() {
     local black=$(tput setaf 0)
     local blue=$(tput setaf 33)
