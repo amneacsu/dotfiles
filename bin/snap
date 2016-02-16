@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+file="~/.snaps/#{Time.now.to_i}.jpg"
+system "imagesnap -q -w 1 #{file}"
+exit 0
