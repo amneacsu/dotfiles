@@ -42,8 +42,7 @@ set_prompts() {
 
     tput sgr0 # reset colors
 
-    PS1="\n"
-    PS1+="\[$lime\]\W"
+    PS1="\[$lime\]\W"
     PS1+="\$(prompt_git \"\[$white\] on \[$teal\]\" \"\[$red\]\")"
     PS1+="\[$yellow\] \$ \[$reset\]"
 
