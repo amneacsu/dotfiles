@@ -282,13 +282,13 @@
 	<key>HotKeyBookmark</key>
 	<string>61921D8F-1003-475A-B584-A4B3536A37D4</string>
 	<key>HotKeyTogglesWindow</key>
-	<true/>
+	<false/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
-	<integer>32</integer>
+	<integer>96</integer>
 	<key>HotkeyCode</key>
-	<integer>49</integer>
+	<integer>50</integer>
 	<key>HotkeyModifiers</key>
 	<integer>524576</integer>
 	<key>IRMemory</key>
@@ -303,16 +303,10 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSColorPanelMode</key>
-	<string>1</string>
-	<key>NSColorPickerSlidersDefaults</key>
-	<string>1</string>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Scratch/dotfiles</string>
+	<string>~/</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 470}</string>
+	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -343,16 +337,12 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>497 497 228 325 0 0 1920 1177 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1070 223 445 77 0 0 1920 1200 </string>
+	<string>2049 112 445 77 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>111 406 606 456 0 0 1440 877 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1260 525 384 129 0 0 1920 1057 </string>
+	<string>453 423 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1920 300 1440 900 1920 300 1440 900 </string>
+	<string>0 56 1221 1361 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1819,23 +1809,27 @@
 			<key>Window Type</key>
 			<integer>2</integer>
 			<key>Working Directory</key>
-			<string>/Users/andrei/Downloads</string>
+			<string>~/</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
-	<key>NoSyncReplaceProfileWarning</key>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
+	<key>NoSyncSuppressAnnyoingBellOffer</key>
 	<true/>
-	<key>NoSyncReplaceProfileWarning_selection</key>
-	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>477305826.86281002</real>
+	<real>477340870.15636301</real>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>455749812.92037398</real>
+	<real>467319274.96439302</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>477269549.30379802</real>
+	<real>467580989.28193903</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -1886,7 +1880,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/andrei/Scratch/dotfiles/.dotfiles</string>
+	<string>~/Scratch/dotfiles/.dotfiles</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -1906,7 +1900,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-02-15T22:52:26Z</date>
+	<date>2016-02-19T17:52:17Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2720,7 +2714,7 @@
 											<key>Window Type</key>
 											<integer>1</integer>
 											<key>Working Directory</key>
-											<string>/Users/andrei</string>
+											<string>~</string>
 										</dict>
 										<key>Bookmark Name</key>
 										<string>Default</string>
@@ -2733,7 +2727,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/andrei</string>
+											<string>~</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -2761,7 +2755,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/andrei/Scratch</string>
+										<string>~/</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -3515,7 +3509,7 @@
 													<key>Window Type</key>
 													<integer>1</integer>
 													<key>Working Directory</key>
-													<string>/Users/andrei</string>
+													<string>~</string>
 												</dict>
 												<key>Bookmark Name</key>
 												<string>Default</string>
@@ -3528,7 +3522,7 @@
 												<key>Environment</key>
 												<dict>
 													<key>PWD</key>
-													<string>/Users/andrei</string>
+													<string>~</string>
 												</dict>
 												<key>Hosts</key>
 												<array/>
@@ -3556,7 +3550,7 @@
 												<key>Substitutions</key>
 												<dict/>
 												<key>Working Directory</key>
-												<string>/Users/andrei</string>
+												<string>~</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
@@ -4307,7 +4301,7 @@
 													<key>Window Type</key>
 													<integer>1</integer>
 													<key>Working Directory</key>
-													<string>/Users/andrei</string>
+													<string>~</string>
 												</dict>
 												<key>Bookmark Name</key>
 												<string>Default</string>
@@ -4320,7 +4314,7 @@
 												<key>Environment</key>
 												<dict>
 													<key>PWD</key>
-													<string>/Users/andrei</string>
+													<string>~</string>
 												</dict>
 												<key>Hosts</key>
 												<array/>
@@ -4348,7 +4342,7 @@
 												<key>Substitutions</key>
 												<dict/>
 												<key>Working Directory</key>
-												<string>/Users/andrei</string>
+												<string>~</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
