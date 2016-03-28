@@ -5,7 +5,7 @@ unset file
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export LS_COLORS="$LS_COLORS:di=33:*.js=92"
+export LS_COLORS="$LS_COLORS:di=38;5;220;1:*.js=92"
 
 # Navigation
 alias ..="cd .."
@@ -78,10 +78,11 @@ set_prompts() {
     local gray=$(tput setaf 8)
     local white=$(tput setaf 2)
     local yellow=$(tput setaf 184)
+    local gold=$(tput setaf 220)
 
     tput sgr0 # reset colors
 
-    PS1="\[$lime\]\W"
+    PS1="\[$gold\]\W"
     PS1+="\$(prompt_git \"\[$white\] on \[$teal\]\" \"\[$red\]\")"
     PS1+="\[$yellow\] \$ \[$reset\]"
 
