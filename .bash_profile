@@ -19,6 +19,7 @@ alias a="atom ."
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 alias gs="git status"
 alias ga="git add -A"
+alias gp="git pull"
 
 # Use GNU df
 alias df="gdf"
