@@ -13,6 +13,7 @@ alias ~="cd ~"
 alias l="gls -l -h --color --group-directories-first"
 alias la="gls -la -h --color --group-directories-first"
 alias s="cd ~/Scratch"
+alias cmus="cmus --show-cursor $@ 2>/dev/null"
 alias a="atom ."
 
 # Go to Git repository root
@@ -20,6 +21,7 @@ alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup 
 alias gs="git status"
 alias ga="git add -A"
 alias gp="git pull"
+alias gd="git diff"
 
 # Use GNU df
 alias df="gdf"
