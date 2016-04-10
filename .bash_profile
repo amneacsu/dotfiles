@@ -100,3 +100,6 @@ unset set_prompts
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
+
+# Welcome message
+figlet -f chunky $(hostname) | lolcat
