@@ -6,6 +6,7 @@ unset file
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LS_COLORS="$LS_COLORS:di=38;5;201;1:ex=38;5;51;1"
+export HOMEBREW_NO_ANALYTICS=1
 
 # Navigation
 alias ..="cd .."
