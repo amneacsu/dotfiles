@@ -103,4 +103,4 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 # Welcome message
-figlet -f chunky $(hostname) | lolcat
+#figlet -f chunky $(hostname) | lolcat
