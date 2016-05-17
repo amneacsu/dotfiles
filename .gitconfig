@@ -21,3 +21,5 @@
 [diff]
   renames = copy
   mnemonicprefix = true
+[credential]
+  helper = osxkeychain
