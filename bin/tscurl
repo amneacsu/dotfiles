@@ -1,0 +1,3 @@
+#!/bin/bash
+
+torsocks $(brew --prefix curl)/bin/curl $@
