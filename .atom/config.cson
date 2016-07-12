@@ -1,0 +1,29 @@
+"*":
+  "bracket-matcher":
+    autocompleteBrackets: false
+    autocompleteSmartQuotes: false
+  core:
+    automaticallyUpdate: false
+    disabledPackages: [
+      "background-tips"
+      "metrics"
+    ]
+    themes: [
+      "one-dark-ui"
+      "gruvbox-plus-syntax"
+    ]
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    showInvisibles: true
+  linter:
+    showErrorPanel: false
+  "linter-stylelint":
+    disableWhenNoConfig: true
+  tabs:
+    addNewTabsAtEnd: true
+    enableVcsColoring: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
