@@ -4,6 +4,7 @@
     autocompleteSmartQuotes: false
   core:
     automaticallyUpdate: false
+    destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
       "metrics"
