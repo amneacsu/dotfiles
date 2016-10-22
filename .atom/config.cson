@@ -1,24 +1,34 @@
 "*":
+  "atom-ternjs":
+    excludeLowerPriorityProviders: true
+    useSnippets: true
+  "autocomplete-plus":
+    includeCompletionsFromAllBuffers: false
+    strictMatching: true
   "bracket-matcher":
     autocompleteBrackets: false
     autocompleteSmartQuotes: false
   core:
-    automaticallyUpdate: false
     destroyEmptyPanes: false
     disabledPackages: [
-      "background-tips"
+      "autocomplete-snippets"
       "metrics"
+      "minimap"
     ]
+    openEmptyEditorOnStart: false
     themes: [
       "one-dark-ui"
       "gruvbox-plus-syntax"
     ]
+    useCustomTitleBar: true
   editor:
     invisibles: {}
     scrollPastEnd: true
-    showInvisibles: true
   linter:
+    gutterPosition: "Left"
+    showErrorInline: false
     showErrorPanel: false
+    showErrorTabLine: true
   "linter-stylelint":
     disableWhenNoConfig: true
   tabs:
