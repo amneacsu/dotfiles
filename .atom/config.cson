@@ -16,6 +16,7 @@
       "minimap"
     ]
     openEmptyEditorOnStart: false
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "gruvbox-plus-syntax"
@@ -26,7 +27,6 @@
     scrollPastEnd: true
   linter:
     gutterPosition: "Left"
-    showErrorInline: false
     showErrorPanel: false
     showErrorTabLine: true
   "linter-stylelint":
@@ -34,6 +34,8 @@
   tabs:
     addNewTabsAtEnd: true
     enableVcsColoring: true
+  "tool-bar":
+    position: "Left"
   welcome:
     showOnStartup: false
   whitespace:

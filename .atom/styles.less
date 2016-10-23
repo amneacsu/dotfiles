@@ -13,11 +13,29 @@
   width: 300px !important;
 }
 
+/**
+ * Animate modals
+ */
 .modal {
   zoom: 1.25;
   animation: enterModal 150ms ease-out;
 }
 
+@keyframes enterModal {
+  from {
+    opacity: 0;
+    margin-top: -40px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+/**
+ * Animate autocomplete overlays
+ */
 autocomplete-suggestion-list {
   opacity: .9;
   margin-top: 5px;
@@ -36,14 +54,18 @@ autocomplete-suggestion-list {
   }
 }
 
-@keyframes enterModal {
-  from {
-    opacity: 0;
-    margin-top: -40px;
+/**
+ * Decorate linter gutter indicators
+ */
+atom-text-editor::shadow {
+  .gutter[gutter-name="linter"] {
+    min-width: 0.75em;
   }
 
-  to {
-    opacity: 1;
-    margin-top: 0;
+  .linter-gutter {
+    border-radius: 2px;
+    width: 66%;
+    height: 1em !important;
+    box-shadow: 0 0 15px red;
   }
 }
