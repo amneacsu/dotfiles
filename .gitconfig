@@ -13,6 +13,8 @@
   excludesfile = ~/.gitignore
 [alias]
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  pf = push -f
+  amm = commit --amend
 [advice]
   statusHints = false
   pushNonFastForward = false
