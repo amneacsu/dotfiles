@@ -1,7 +1,4 @@
 "*":
-  "atom-ternjs":
-    excludeLowerPriorityProviders: true
-    useSnippets: true
   "autocomplete-plus":
     includeCompletionsFromAllBuffers: false
     strictMatching: true
@@ -23,6 +20,7 @@
     ]
     useCustomTitleBar: true
   editor:
+    fontFamily: "Mononoki"
     invisibles: {}
     scrollPastEnd: true
   linter:
@@ -34,8 +32,6 @@
   tabs:
     addNewTabsAtEnd: true
     enableVcsColoring: true
-  "tool-bar":
-    position: "Left"
   welcome:
     showOnStartup: false
   whitespace:
