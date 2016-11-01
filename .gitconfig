@@ -25,3 +25,5 @@
   mnemonicprefix = true
 [credential]
   helper = osxkeychain
+[rerere]
+  enabled = true
