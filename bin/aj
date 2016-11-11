@@ -1,3 +1,4 @@
 #!/bin/bash
 
-mpv http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8
+figlet Al Jazeera | lolcat -S 1 -p 20
+mpv https://www.youtube.com/watch?v=1YnlX4CkPDY
