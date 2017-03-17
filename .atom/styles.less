@@ -54,11 +54,15 @@ autocomplete-suggestion-list {
   }
 }
 
+.line-number .icon-right {
+  display: none !important;
+}
+
 /**
  * Decorate linter gutter indicators
  */
 atom-text-editor.editor {
-  .gutter[gutter-name="linter"] {
+  .gutter[gutter-name="linter-ui-default"] {
     min-width: 0.75em;
   }
 
@@ -68,11 +72,17 @@ atom-text-editor.editor {
     height: 1em !important;
   }
 
-  .linter-gutter.warning {
+  .icon:before {
+    opacity: 0;
+  }
+
+  .linter-warning {
+    background-color: #ad7c0b;
     box-shadow: 0 0 15px #ad7c0b;
   }
 
-  .linter-gutter.error {
+  .linter-error {
+    background-color: red;
     box-shadow: 0 0 15px red;
   }
 }
