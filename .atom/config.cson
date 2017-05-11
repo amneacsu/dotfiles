@@ -6,6 +6,7 @@
     autocompleteBrackets: false
     autocompleteSmartQuotes: false
   core:
+    closeDeletedFileTabs: true
     destroyEmptyPanes: false
     disabledPackages: [
       "autocomplete-snippets"
@@ -18,7 +19,7 @@
       "one-dark-ui"
       "gruvbox-plus-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom-inset"
   editor:
     fontFamily: "Mononoki"
     invisibles: {}
