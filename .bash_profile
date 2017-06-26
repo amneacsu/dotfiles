@@ -46,17 +46,13 @@ function prompt_git() {
     ## early exit for Chromium & Blink repo, as the dirty check takes ~5s
     ## also recommended (via goo.gl/wAVZLa ) : sudo sysctl kern.maxvnodes=$((512*1024))
     repoUrl=$(git config --get remote.origin.url)
-    if grep -q chromium.googlesource.com <<<$repoUrl; then
-        dirty=" ⁂"
-    else
 
-        # check if it's dirty (slow)
-        #   technique via github.com/git/git/blob/355d4e173/contrib/completion/git-prompt.sh#L472-L475
-        dirty=$(git diff --no-ext-diff --quiet --ignore-submodules --exit-code || echo -e "*")
+    # check if it's dirty (slow)
+    #   technique via github.com/git/git/blob/355d4e173/contrib/completion/git-prompt.sh#L472-L475
+    dirty=$(git diff --no-ext-diff --quiet --ignore-submodules --exit-code || echo -e "*")
 
-        # mathias has a few more checks some may like:
-        #    github.com/mathiasbynens/dotfiles/blob/a8bd0d4300/.bash_prompt#L30-L43
-    fi
+    # mathias has a few more checks some may like:
+    #    github.com/mathiasbynens/dotfiles/blob/a8bd0d4300/.bash_prompt#L30-L43
 
 
     [ -n "${s}" ] && s=" [${s}]";
