@@ -25,26 +25,17 @@
  * Decorate linter gutter indicators
  */
 atom-text-editor.editor {
-  .gutter[gutter-name="linter-ui-default"] {
-    min-width: 0.75em;
-  }
-
   .linter-gutter {
     border-radius: 2px;
-    width: 66%;
     height: 1em !important;
   }
 
-  .linter-gutter.linter-highlight:before {
-    opacity: 0;
-  }
-
-  .linter-gutter.linter-warning {
+  .linter-gutter.linter-gutter-warning {
     background-color: #ad7c0b;
     box-shadow: 0 0 15px #ad7c0b;
   }
 
-  .linter-gutter.linter-error {
+  .linter-gutter.linter-gutter-error {
     background-color: red;
     box-shadow: 0 0 15px red;
   }
