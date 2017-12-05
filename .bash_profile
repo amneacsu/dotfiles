@@ -89,7 +89,10 @@ set_prompts() {
     export PS1
 }
 
-set_prompts
+# Check whether the shell is an interactive shell
+if [[ $- == *i* ]]; then
+  set_prompts
+fi
 unset set_prompts
 
 # Add tab completion for Git commands and branches
