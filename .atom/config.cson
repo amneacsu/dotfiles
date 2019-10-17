@@ -20,6 +20,7 @@
       "gruvbox-plus-syntax"
     ]
     titleBar: "custom-inset"
+    useTreeSitterParsers: false
   editor:
     fontFamily: "Mononoki"
     invisibles: {}
