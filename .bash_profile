@@ -97,6 +97,6 @@ fi
 unset set_prompts
 
 # Add tab completion for Git commands and branches
-if [ -f ~/.git-completion.bash ]; then
-    . ~/.git-completion.bash
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+. `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
