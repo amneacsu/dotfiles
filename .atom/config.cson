@@ -5,6 +5,8 @@
   "bracket-matcher":
     autocompleteBrackets: false
     autocompleteSmartQuotes: false
+  "chary-tree-view":
+    dirSingleClick: false
   core:
     closeDeletedFileTabs: true
     destroyEmptyPanes: false
