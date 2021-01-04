@@ -5,8 +5,6 @@
   "bracket-matcher":
     autocompleteBrackets: false
     autocompleteSmartQuotes: false
-  "chary-tree-view":
-    dirSingleClick: false
   core:
     closeDeletedFileTabs: true
     destroyEmptyPanes: false
@@ -14,6 +12,7 @@
       "autocomplete-snippets"
       "metrics"
       "minimap"
+      "spell-check"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "no"
