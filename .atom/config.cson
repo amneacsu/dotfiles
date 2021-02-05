@@ -24,16 +24,14 @@
     useTreeSitterParsers: false
   editor:
     fontFamily: "Mononoki"
+    fontSize: 18
     invisibles: {}
     scrollPastEnd: true
   linter:
     gutterPosition: "Left"
-    showErrorPanel: false
     showErrorTabLine: true
   "linter-stylelint":
     disableWhenNoConfig: true
-  "linter-ui-default":
-    showPanel: true
   tabs:
     addNewTabsAtEnd: true
     enableVcsColoring: true
