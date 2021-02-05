@@ -24,6 +24,8 @@
   renames = copy
   mnemonicprefix = true
 [credential]
-  helper = osxkeychain
+  helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 [rerere]
   enabled = true
+[init]
+	defaultBranch = master

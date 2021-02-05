@@ -1,21 +1,11 @@
-for file in ~/.{extra,aliases}; do
-    [ -r "$file" ] && source "$file"
-done
-unset file
-
-export BASH_SILENCE_DEPRECATION_WARNING=1
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 export LS_COLORS="$LS_COLORS:di=38;5;201;1:ex=38;5;51;1"
-export HOMEBREW_NO_ANALYTICS=1
 
 # Navigation
 alias ..="cd .."
 alias ~="cd ~"
-alias l="gls -l -h --color --group-directories-first"
-alias la="gls -la -h --color --group-directories-first"
+alias l="ls -l -h --color --group-directories-first"
+alias la="ls -la -h --color --group-directories-first"
 alias s="cd ~/Scratch"
-alias cmus="cmus --show-cursor $@ 2>/dev/null"
 alias a="atom ."
 
 # Go to Git repository root
@@ -23,9 +13,6 @@ alias g="git"
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 alias gs="git status"
 alias ga="git add -A"
-
-# Use GNU df
-alias df="gdf"
 
 function prompt_git() {
     # this is >5x faster than mathias's.
@@ -95,8 +82,3 @@ if [[ $- == *i* ]]; then
   set_prompts
 fi
 unset set_prompts
-
-# Add tab completion for Git commands and branches
-if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
-. `brew --prefix`/etc/bash_completion.d/git-completion.bash
-fi
