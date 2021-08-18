@@ -43,11 +43,6 @@ function prompt_git() {
         git rev-parse --short HEAD 2> /dev/null || \
         echo '(unknown)')";
 
-
-    ## early exit for Chromium & Blink repo, as the dirty check takes ~5s
-    ## also recommended (via goo.gl/wAVZLa ) : sudo sysctl kern.maxvnodes=$((512*1024))
-    repoUrl=$(git config --get remote.origin.url)
-
     # check if it's dirty (slow)
     #   technique via github.com/git/git/blob/355d4e173/contrib/completion/git-prompt.sh#L472-L475
     dirty=$(git diff --no-ext-diff --quiet --ignore-submodules --exit-code || echo -e "*")
