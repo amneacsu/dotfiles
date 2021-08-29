@@ -12,11 +12,8 @@
   ignorecase = true
   excludesfile = ~/.gitignore
 [alias]
-  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   pf = push --force-with-lease
   amm = commit --amend
-  co = checkout
-  delete-branch = branch -D
 [advice]
   statusHints = false
   pushNonFastForward = false
