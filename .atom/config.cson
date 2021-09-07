@@ -1,4 +1,15 @@
 "*":
+  "atom-typescript":
+    ignoredDiagnosticCodes: [
+      "80005"
+      "80006"
+      "6133"
+      "6198"
+      "6385"
+      "7044"
+      "80004"
+    ]
+    unusedAsInfo: false
   "autocomplete-plus":
     includeCompletionsFromAllBuffers: false
     strictMatching: true
