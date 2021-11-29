@@ -8,6 +8,7 @@
       "6385"
       "7044"
       "80004"
+      "6192"
     ]
     unusedAsInfo: false
   "autocomplete-plus":
@@ -43,8 +44,13 @@
   linter:
     gutterPosition: "Left"
     showErrorTabLine: true
-  "linter-stylelint":
-    disableWhenNoConfig: true
+  "linter-eslint":
+    scopes: [
+      "source.js"
+      "source.jsx"
+      "source.ts"
+      "source.tsx"
+    ]
   tabs:
     addNewTabsAtEnd: true
     enableVcsColoring: true
