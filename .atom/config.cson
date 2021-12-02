@@ -48,6 +48,7 @@
     scopes: [
       "source.js"
       "source.jsx"
+      "source.js.jsx"
       "source.ts"
       "source.tsx"
     ]
