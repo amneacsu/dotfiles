@@ -44,7 +44,7 @@
   linter:
     gutterPosition: "Left"
     showErrorTabLine: true
-  "linter-eslint":
+  "linter-eslint-node":
     scopes: [
       "source.js"
       "source.jsx"
