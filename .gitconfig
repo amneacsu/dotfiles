@@ -3,6 +3,9 @@
   email = 0x514@protonmail.com
 [color]
   ui = always
+[color.diff]
+  old = brightmagenta
+  new = brightcyan
 [pull]
   rebase = true
 [push]
