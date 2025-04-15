@@ -39,4 +39,6 @@
     "typescript.preferences.quoteStyle": "double",
     "gitlens.launchpad.indicator.enabled": false,
     "jest.runMode": "on-demand",
+    "update.mode": "none",
+    "editor.stickyScroll.enabled": false,
 }
