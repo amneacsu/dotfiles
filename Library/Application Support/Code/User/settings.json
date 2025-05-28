@@ -41,4 +41,6 @@
     "jest.runMode": "on-demand",
     "update.mode": "none",
     "editor.stickyScroll.enabled": false,
+    "eslint.useFlatConfig": true,
+    "editor.colorDecorators": false,
 }
