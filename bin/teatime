@@ -1,6 +1,0 @@
-#!/bin/bash
-echo "Start steeping..."
-for i in $(seq 240 -1 0); do echo -ne "\r$i "; sleep 1; done; echo
-echo "Tea is ready!"
-for i in {1..5}; do tput bel; sleep 0.1; done
-

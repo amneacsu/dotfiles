@@ -1,0 +1,12 @@
+alias ..="cd .."
+alias ~="cd ~"
+alias l="ls -l -h --color --group-directories-first"
+alias la="ls -la -h --color --group-directories-first"
+alias s="cd ~/Scratch"
+
+# Go to Git repository root
+alias g="git"
+alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+alias gs="git status"
+alias ga="git add -A"
+

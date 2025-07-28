@@ -14,6 +14,7 @@
   autocrlf = false
   ignorecase = true
   excludesfile = ~/.gitignore
+  editor = vi
 [alias]
   pf = push --force-with-lease
   amm = commit --amend
@@ -25,8 +26,8 @@
 [diff]
   renames = copy
   mnemonicprefix = true
-[credential]
-  helper = osxkeychain
+#[credential]
+#  helper = osxkeychain
 [rerere]
   enabled = true
 [filter "lfs"]
@@ -36,3 +37,9 @@
   required = true
 [init]
   defaultBranch = master
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

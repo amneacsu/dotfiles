@@ -1,4 +1,0 @@
-.rsync-exclude
-.git
-.DS_Store
-sync.sh
