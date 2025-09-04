@@ -1,4 +1,5 @@
 {
+    "chat.commandCenter.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "editor.guides.indentation": false,
     "editor.lightbulb.enabled": "off",
