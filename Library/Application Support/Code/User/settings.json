@@ -12,7 +12,6 @@
     "editor.codeLens": false,
     "workbench.editor.showIcons": false,
     "explorer.compactFolders": false,
-    "workbench.iconTheme": "vscode-icons",
     "workbench.editor.empty.hint": "hidden",
     "workbench.activityBar.location": "hidden",
     "window.zoomLevel": 2,
@@ -44,4 +43,9 @@
     "editor.stickyScroll.enabled": false,
     "eslint.useFlatConfig": true,
     "editor.colorDecorators": false,
+    "breadcrumbs.showClasses": false,
+    "eslint.codeActionsOnSave.options": {
+        "fixAll": false,
+    },
+    "eslint.run": "onSave",
 }
