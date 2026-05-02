@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mpv --no-video --shuffle --loop-playlist yes \
+mpv --no-video --shuffle --loop-playlist=yes \
 https://www.youtube.com/watch?v=ONwVr6OqSrA \
 https://www.youtube.com/watch?v=pkveQIwlFOY \
 https://www.youtube.com/watch?v=TFLoxi92oo8 \
