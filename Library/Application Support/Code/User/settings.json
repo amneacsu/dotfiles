@@ -35,7 +35,6 @@
   "js/ts.preferences.quoteStyle": "double",
   "update.mode": "none",
   "editor.stickyScroll.enabled": false,
-  "eslint.useFlatConfig": true,
   "editor.colorDecorators": false,
   "html.autoCreateQuotes": false,
   "editor.tabSize": 2,
